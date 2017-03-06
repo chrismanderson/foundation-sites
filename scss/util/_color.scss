@@ -71,7 +71,7 @@
     }
   }
 
-  @if ($contrast < 3) {
+  @if ($contrast < 3 && $contrast-warnings) {
     @warn "Contrast ratio of #{$best} on #{$base} is pretty bad, just #{$contrast}";
   }
 
